@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLE Connection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #ble-console {
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            overflow-y: auto;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>BLE Connection with ESP32</h1>
+
+    <!-- Buttons -->
+    <button id="ble-button">Connect to BLE</button>
+    <button id="send-ready-button" disabled>Send "Ready" to ESP32</button>
+
+    <!-- Status -->
+    <p id="ble-status">Status: Not connected</p>
+
+    <!-- Console for Displaying Data -->
+    <h3>Data Received:</h3>
+    <textarea id="ble-console" readonly></textarea>
+
+    <!-- JavaScript -->
+    <script src="ble.js"></script>
+</body>
+</html>
